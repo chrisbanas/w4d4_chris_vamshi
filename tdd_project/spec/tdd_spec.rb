@@ -39,7 +39,12 @@ describe "tdd" do
         end
     end
 
+    describe "stock_picker" do  
 
+        it "takes an array of stock prices (prices on days 0, 1, ...), and outputs the most profitable pair of days on which to first buy the stock and then sell the stock." do 
+            expect(stock_picker([1,10,20,5,30,2,45,70])).to eq([0,7])
+        end
+    end
 
 
 

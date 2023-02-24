@@ -34,3 +34,9 @@ class Array
     end
 
 end
+
+def stock_picker(arr)
+    min = arr.index(arr.min)
+    max = arr.index(arr.max)
+    [min, max]
+end
